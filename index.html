@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FORMS AND INPUTS IN HTML</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav>
+    <a href="#hostel">Hostel</a>
+    <a href="#transport">Transport</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <h1>APPLICATION FORM FOR REGISTRATION SESSION (FALL-2023)</h1>
+  <hr>
+  <h3 class="headings">A) PERSONAL INFORMATION</h3>
+
+  <form target="_blank">
+    <p class="lineheight">
+
+      <label for="name">1) NAME (AS PER MATRICULATION CERTIFICATE)</label>
+      <input type="text" name="name" id="name" size="25px" /> <br>
+      <label for="cnic">2) CNIC (WITHOUT DASHES)</label>
+      <input type="number" name="cnic" id="cnic" placeholder="e.g 3450242071309" required /> <br>
+      <label for="fathersname">3) FATHER'S NAME</label>
+      <input type="text" name="fahersname" id="fathersname" required /> <br>
+      <label for="fathercnic">4) FATHER'S CNIC(WITHOUT DASHES)</label>
+      <input type="number" name="fathercnic" id="fathercnic" placeholder="e.g 3450242071309" required /> <br>
+      <label for="mothersname">5) MOTHER'S NAME</label>
+      <input type="text" name="mothersname" id="mothersname" required /> <br>
+      <label for="mothercnic">6) MOTHER'S CNIC(WITHOUT DASHES)</label>
+      <input type="number" name="mothercnic" id="mothercnic" placeholder="e.g 3450242071309" required /> <br>
+      <label for="dob">7) APPLICANT'S DATE OF BIRTH</label>
+      <input type="date" name="dob" id="dob" placeholder="Format:dd-mm-yy" required /> <br>
+      <label for="bloodgroup">8) BLOOD GROUP</label>
+      <select name="bloodgroup" id="bloodgroup">
+        <option value="" disabled selected>Select One</option>
+        <option value="A+">A+</option>
+        <option value="A-">A-</option>
+        <option value="B+">B+</option>
+        <option value="B-">B-</option>
+        <option value="O+">O+</option>
+        <option value="O-">O-</option>
+        <option value="AB+">AB+</option>
+        <option value="AB-">AB-</option>
+      </select> <br>
+
+      <label for="religion">9) RELIGION</label>
+      <select name="religion" id="religion" placeholder="select" required>
+        <option value="" disabled selected>Select One</option>
+        <option value="muslim">MUSLIM</option>
+        <option value="nonmuslim">NON-MUSLIM</option>
+      </select> <br>
+
+      <label for="Gender">9) Gender</label>
+      <select name="Gender" placeholder="select" required>
+
+        <option value="" disabled selected>Select One</option>
+        <option value="selectone">Male</option>
+        <option value="muslim">Female</option>
+        <option value="nonmuslim">Other(Prefer not to say)</option>
+      </select> <br>
+      <label for="contactno">11) PARENT/GUARDIAN CONTACT NO</label>
+      <input type="number" name="contactno" id="contactno" required placeholder="123-456-7890"> <br>
+
+
+      <label for="percontactno">12) PERSONAL CONTACT NO</label>
+      <input type="number" name="percontactno" id="percontactno" placeholder="123-456-7890"> <br>
+
+      <label for="postaladdress">13) POSTAL ADDRESS:</label>
+      <textarea name="postaladdress" id="postaladdress" cols="30" rows="10" placeholder="Postal address"></textarea>
+      <br>
+
+      <label for="permanentaddress">14) PERMANENT ADDRESS:</label>
+      <textarea name="permanentaddress" id="" cols="30" rows="10" placeholder="Permanent address"></textarea> <br>
+    </p>
+
+    <hr>
+    <h3 class="headings">B) EDUCATIONAL INFORMATION</h1>
+      <p class="lineheight1">
+
+        <label for="mediumofeducation"><b>PLEASE SELECT ONE FROM THE FOLLOWING:</b></label>
+        <select name="mediumofeducation" id="mediumofeducation">
+          <option value="" disabled selected>Select One</option>
+          <option value="matric">MATRIC</option>
+          <option value="O/A levels">O/A Levels</option>
+        </select><br>
+
+        <label for="institution">1) NAME OF INSTITUTION </label>
+        <input type="text" name="institution" id="institution" size="35px"><br>
+        <label for="totalmarks">2) TOTAL MARKS: </label>
+        <input type="number" name="totalmarks" id="obtainedmarks" required>
+        <label for="obtainedmarks">&nbsp;3)
+          OBTAINED MARKS: </label>
+        <input type="number" name="obtainedmarks" id="obtainedmarks" required><br>
+
+        <label for="percentage">4) PERCENTAGE/CGPA OBTAINED: </label>
+        <input type="number" name="percentage" id="percentage">
+
+        <label for="grade">&nbsp;5)
+          GRADE/DIVISION: </label>
+        <input type="url" name="grade" id="grade"><br>
+      </p>
+
+      <hr>
+      <p class="lineheight2">
+
+        <label for="mediumofeducation"><b>PLEASE SELECT ONE FROM THE FOLLOWING:</b></label>
+        <select name="mediumofeducation" id="mediumofeducation">
+          <option value="" disabled selected>Select One</option>
+          <option value="fscpreeng">FSc Pre Engineering</option>
+          <option value="fscpremedical">FSc Pre Medical</option>
+          <option value="ics">ICS</option>
+          <option value="icom">ICOM</option>
+        </select><br>
+
+
+        <label for="institution">1) NAME OF INSTITUTION </label>
+        <input type="text" name="institution" id="institution" size="35px" required><br>
+
+
+        <label for="totalmarks">2) TOTAL MARKS: </label>
+        <input type="number" name="totalmarks" id="obtainedmarks" required>
+
+        <label for="obtainedmarks">&nbsp;3)
+          OBTAINED MARKS: </label>
+        <input type="number" name="obtainedmarks" id="obtainedmarks" required><br>
+
+
+
+        <label for="percentage">4) PERCENTAGE/CGPA OBTAINED: </label>
+        <input type="number" name="percentage" id="percentage">
+
+        <label for="grade">&nbsp;5)
+          GRADE/DIVISION: </label>
+        <input type="url" name="grade" id="grade"><br>
+      </p>
+
+      <hr>
+      <h3 class="headings">C) PROGRAM SELECTION</h3>
+      <p class="lineheight3">
+
+
+        <label for="preferences">SELECT 1ST PREFERENCE</label>
+        <select name="preferences" id="preferences">
+          <option value="selectone" disabled selected>Select One</option>
+          <option value="ELECTRICAL ENGINEERING">ELECTRICAL ENGINEERING</option>
+          <option value="MECHANICAL ENGINEERING">MECHANICAL ENGINEERING</option>
+          <option value="MECHATRONICS ENGINEERING">MECHATRONICS ENGINEERING</option>
+          <option value="COMPUTER ENGINEERING">COMPUTER ENGINEERING</option>
+          <option value="COMPUTER SCIENCE">COMPUTER SCIENCE</option>
+          <option value="SOFTWARE ENGINEERING">SOFTWARE ENGINEERING</option>
+          <option value="DATA SCIENCE">DATA SCIENCE</option>
+          <option value="ARTIFICIAL INTELLIGENCE">ARTIFICIAL INTELLIGENCE</option>
+          <option value="CYBER SECURITY">CYBER SECURITY</option>
+          <option value="CIVIL ENGINEERING">CIVIL ENGINEERING</option>
+          <option value="MATERIALS ENGINEERING">MATERIALS ENGINEERING</option>
+          <option value="AERONAUTICAL ENGINEERING">AERONAUTICAL ENGINEERING</option>
+          <option value="BS PHYSICS">BS PHYSICS</option>
+          <option value="BS MATHS">BS MATHS</option>
+          <option value="BS CHEMISTRY">BS CHEMISTRY</option>
+
+        </select><br>
+
+
+        <label for="preferences">SELECT 2ND PREFERENCE</label>
+        <select name="preferences" id="preferences">
+          <option value="selectone" disabled selected>Select One</option>
+          <option value="ELECTRICAL ENGINEERING">ELECTRICAL ENGINEERING</option>
+          <option value="MECHANICAL ENGINEERING">MECHANICAL ENGINEERING</option>
+          <option value="MECHATRONICS ENGINEERING">MECHATRONICS ENGINEERING</option>
+          <option value="COMPUTER ENGINEERING">COMPUTER ENGINEERING</option>
+          <option value="COMPUTER SCIENCE">COMPUTER SCIENCE</option>
+          <option value="SOFTWARE ENGINEERING">SOFTWARE ENGINEERING</option>
+          <option value="DATA SCIENCE">DATA SCIENCE</option>
+          <option value="ARTIFICIAL INTELLIGENCE">ARTIFICIAL INTELLIGENCE</option>
+          <option value="CYBER SECURITY">CYBER SECURITY</option>
+          <option value="CIVIL ENGINEERING">CIVIL ENGINEERING</option>
+          <option value="MATERIALS ENGINEERING">MATERIALS ENGINEERING</option>
+          <option value="AERONAUTICAL ENGINEERING">AERONAUTICAL ENGINEERING</option>
+          <option value="BS PHYSICS">BS PHYSICS</option>
+          <option value="BS MATHS">BS MATHS</option>
+          <option value="BS CHEMISTRY">BS CHEMISTRY</option>
+        </select><br>
+
+        <label for="preferences">SELECT 3RD PREFERENCE</label>
+        <select name="preferences" id="preferences">
+          <option value="selectone" disabled selected>Select One</option>
+          <option value="ELECTRICAL ENGINEERING">ELECTRICAL ENGINEERING</option>
+          <option value="MECHANICAL ENGINEERING">MECHANICAL ENGINEERING</option>
+          <option value="MECHATRONICS ENGINEERING">MECHATRONICS ENGINEERING</option>
+          <option value="COMPUTER ENGINEERING">COMPUTER ENGINEERING</option>
+          <option value="COMPUTER SCIENCE">COMPUTER SCIENCE</option>
+          <option value="SOFTWARE ENGINEERING">SOFTWARE ENGINEERING</option>
+          <option value="DATA SCIENCE">DATA SCIENCE</option>
+          <option value="ARTIFICIAL INTELLIGENCE">ARTIFICIAL INTELLIGENCE</option>
+          <option value="CYBER SECURITY">CYBER SECURITY</option>
+          <option value="CIVIL ENGINEERING">CIVIL ENGINEERING</option>
+          <option value="MATERIALS ENGINEERING">MATERIALS ENGINEERING</option>
+          <option value="AERONAUTICAL ENGINEERING">AERONAUTICAL ENGINEERING</option>
+          <option value="BS PHYSICS">BS PHYSICS</option>
+          <option value="BS MATHS">BS MATHS</option>
+          <option value="BS CHEMISTRY">BS CHEMISTRY</option>
+        </select><br>
+
+        <label for="preferences">SELECT 4TH PREFERENCE</label>
+        <select name="preferences" id="preferences">
+          <option value="selectone" disabled selected>Select One</option>
+          <option value="ELECTRICAL ENGINEERING">ELECTRICAL ENGINEERING</option>
+          <option value="MECHANICAL ENGINEERING">MECHANICAL ENGINEERING</option>
+          <option value="MECHATRONICS ENGINEERING">MECHATRONICS ENGINEERING</option>
+          <option value="COMPUTER ENGINEERING">COMPUTER ENGINEERING</option>
+          <option value="COMPUTER SCIENCE">COMPUTER SCIENCE</option>
+          <option value="SOFTWARE ENGINEERING">SOFTWARE ENGINEERING</option>
+          <option value="DATA SCIENCE">DATA SCIENCE</option>
+          <option value="ARTIFICIAL INTELLIGENCE">ARTIFICIAL INTELLIGENCE</option>
+          <option value="CYBER SECURITY">CYBER SECURITY</option>
+          <option value="CIVIL ENGINEERING">CIVIL ENGINEERING</option>
+          <option value="MATERIALS ENGINEERING">MATERIALS ENGINEERING</option>
+          <option value="AERONAUTICAL ENGINEERING">AERONAUTICAL ENGINEERING</option>
+          <option value="BS PHYSICS">BS PHYSICS</option>
+          <option value="BS MATHS">BS MATHS</option>
+          <option value="BS CHEMISTRY">BS CHEMISTRY</option>
+        </select><br>
+
+        <label for="preferences">SELECT 5TH PREFERENCE</label>
+        <select name="preferences" id="preferences">
+          <option value="selectone" disabled selected>Select One</option>
+          <option value="ELECTRICAL ENGINEERING">ELECTRICAL ENGINEERING</option>
+          <option value="MECHANICAL ENGINEERING">MECHANICAL ENGINEERING</option>
+          <option value="MECHATRONICS ENGINEERING">MECHATRONICS ENGINEERING</option>
+          <option value="COMPUTER ENGINEERING">COMPUTER ENGINEERING</option>
+          <option value="COMPUTER SCIENCE">COMPUTER SCIENCE</option>
+          <option value="SOFTWARE ENGINEERING">SOFTWARE ENGINEERING</option>
+          <option value="DATA SCIENCE">DATA SCIENCE</option>
+          <option value="ARTIFICIAL INTELLIGENCE">ARTIFICIAL INTELLIGENCE</option>
+          <option value="CYBER SECURITY">CYBER SECURITY</option>
+          <option value="CIVIL ENGINEERING">CIVIL ENGINEERING</option>
+          <option value="MATERIALS ENGINEERING">MATERIALS ENGINEERING</option>
+          <option value="AERONAUTICAL ENGINEERING">AERONAUTICAL ENGINEERING</option>
+          <option value="BS PHYSICS">BS PHYSICS</option>
+          <option value="BS MATHS">BS MATHS</option>
+          <option value="BS CHEMISTRY">BS CHEMISTRY</option>
+        </select><br>
+
+        <label for="preferences">SELECT 6TH PREFERENCE</label>
+        <select name="preferences" id="preferences">
+          <option value="selectone" disabled selected>Select One</option>
+          <option value="ELECTRICAL ENGINEERING">ELECTRICAL ENGINEERING</option>
+          <option value="MECHANICAL ENGINEERING">MECHANICAL ENGINEERING</option>
+          <option value="MECHATRONICS ENGINEERING">MECHATRONICS ENGINEERING</option>
+          <option value="COMPUTER ENGINEERING">COMPUTER ENGINEERING</option>
+          <option value="COMPUTER SCIENCE">COMPUTER SCIENCE</option>
+          <option value="SOFTWARE ENGINEERING">SOFTWARE ENGINEERING</option>
+          <option value="DATA SCIENCE">DATA SCIENCE</option>
+          <option value="ARTIFICIAL INTELLIGENCE">ARTIFICIAL INTELLIGENCE</option>
+          <option value="CYBER SECURITY">CYBER SECURITY</option>
+          <option value="CIVIL ENGINEERING">CIVIL ENGINEERING</option>
+          <option value="MATERIALS ENGINEERING">MATERIALS ENGINEERING</option>
+          <option value="AERONAUTICAL ENGINEERING">AERONAUTICAL ENGINEERING</option>
+          <option value="BS PHYSICS">BS PHYSICS</option>
+          <option value="BS MATHS">BS MATHS</option>
+          <option value="BS CHEMISTRY">BS CHEMISTRY</option>
+        </select><br>
+
+        <label for="preferences">SELECT 7TH PREFERENCE</label>
+        <select name="preferences" id="preferences">
+          <option value="selectone" disabled selected>Select One</option>
+          <option value="ELECTRICAL ENGINEERING">ELECTRICAL ENGINEERING</option>
+          <option value="MECHANICAL ENGINEERING">MECHANICAL ENGINEERING</option>
+          <option value="MECHATRONICS ENGINEERING">MECHATRONICS ENGINEERING</option>
+          <option value="COMPUTER ENGINEERING">COMPUTER ENGINEERING</option>
+          <option value="COMPUTER SCIENCE">COMPUTER SCIENCE</option>
+          <option value="SOFTWARE ENGINEERING">SOFTWARE ENGINEERING</option>
+          <option value="DATA SCIENCE">DATA SCIENCE</option>
+          <option value="ARTIFICIAL INTELLIGENCE">ARTIFICIAL INTELLIGENCE</option>
+          <option value="CYBER SECURITY">CYBER SECURITY</option>
+          <option value="CIVIL ENGINEERING">CIVIL ENGINEERING</option>
+          <option value="MATERIALS ENGINEERING">MATERIALS ENGINEERING</option>
+          <option value="AERONAUTICAL ENGINEERING">AERONAUTICAL ENGINEERING</option>
+          <option value="BS PHYSICS">BS PHYSICS</option>
+          <option value="BS MATHS">BS MATHS</option>
+          <option value="BS CHEMISTRY">BS CHEMISTRY</option>
+        </select><br>
+      </p>
+      <hr>
+      <h3 class="headings">D) WANT TO HEAR FROM YOU!!</h3>
+      <p class="lineheight4">
+        How do you hear about us??<br>
+        <input type="checkbox" name="info" class="info">
+        <label for="info">WHATSAPP</label>
+        <input type="checkbox" name="info" class="info">
+        <label for="info">FACEBOOK</label>
+        <input type="checkbox" name="info" class="info">
+        <label for="info">INSTAGRAM</label>
+        <input type="checkbox" name="info" class="info">
+        <label for="info">TWITTER</label>
+        <input type="checkbox" name="info" class="info">
+        <label for="info">GOOGLE</label>
+        <input type="checkbox" name="info" class="info">
+        <label for="info">FRIENDS/ OTHERS</label><br>
+      </p>
+      <hr>
+      <p class="lineheight5">
+      <h3 class="headings">E) UNDERTAKING</h3>
+      <p class="undertaking"><input type="checkbox" name="undertaking" id="confirm" required>
+        <label for="confirm">I HEREBY CONFIRM THAT THE INFORMATION PROVIDED IS TO THE BEST OF MY KNOWLEDGE
+          AND MY REGISTRATION SHALL BE REJECTED AT ANY TIME IN CASE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FALSE OR MISLEADING
+          INFORMATION IS FOUND!!</label>
+      </p>
+      </p>
+      <hr>
+      <br>
+      <p class="lineheight6">
+        <button type="reset">RESET</button>
+        <button type="submit">SUBMIT</button>
+      </p>
+  </form>
+</body>
+
+</html>
